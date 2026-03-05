@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="lt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linksmieji Namai – Parduodame NT</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="bg-animations">
+      <div class="bg-circle bg-circle--one"></div>
+      <div class="bg-circle bg-circle--two"></div>
+      <div class="bg-circle bg-circle--three"></div>
+    </div>
+
+    <header class="top-bar">
+      <div class="logo">
+        <span class="logo-icon">🏡</span>
+        <span class="logo-text">Linksmieji Namai</span>
+      </div>
+      <nav class="nav">
+        <a href="#hero">Pradžia</a>
+        <a href="#motivation">Motyvacija</a>
+        <a href="#listings">NT pasiūlymai</a>
+        <a href="#avatar">Mūsų avataras</a>
+      </nav>
+      <button class="mood-toggle" id="moodToggle" aria-label="Perjungti nuotaiką">
+        ☀️
+      </button>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-content">
+          <h1>
+            Rask savo
+            <span class="hero-highlight">linksmus namus</span>
+          </h1>
+          <p class="hero-subtitle">
+            Motyvacija, gera nuotaika ir kruopščiai atrinktas nekilnojamas turtas –
+            viskas vienoje žaismingoje svetainėje. Čia net kvadratiniai metrai
+            šypsosi!
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" id="scrollToListings">
+              Peržiūrėti pasiūlymus
+            </button>
+            <button class="btn btn-ghost" id="randomMotivation">
+              Man reikia motyvacijos ✨
+            </button>
+          </div>
+          <div class="hero-motivation" id="motivationBubble">
+            „Kiekvienas namas turi sielą, o tavo – jau tavęs laukia.“
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-house-card">
+            <div class="hero-house-img">
+              <div class="hero-cloud hero-cloud--left"></div>
+              <div class="hero-cloud hero-cloud--right"></div>
+              <div class="hero-sun"></div>
+              <div class="hero-house"></div>
+              <div class="hero-tree hero-tree--left"></div>
+              <div class="hero-tree hero-tree--right"></div>
+            </div>
+            <p class="hero-quote">
+              „Nesvarbu koks oras lauke – svarbu, kad jauku namuose.“
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="motivation" class="motivation">
+        <h2>Gera nuotaika + geras NT = tobula kombinacija</h2>
+        <div class="motivation-grid">
+          <article class="motivation-card">
+            <h3>💡 Motyvacija</h3>
+            <p>
+              Namai – tai daugiau nei sienos. Tai vieta, kur gimsta tavo idėjos,
+              planai ir maži kasdieniai stebuklai.
+            </p>
+          </article>
+          <article class="motivation-card">
+            <h3>😊 Gera nuotaika</h3>
+            <p>
+              Spalvingas dizainas, žaismingos animacijos ir draugiškas avataras
+              padės išlaikyti šypseną viso paieškos proceso metu.
+            </p>
+          </article>
+          <article class="motivation-card">
+            <h3>📊 Aiški informacija</h3>
+            <p>
+              Kainos, statusas „Parduota“ arba „Laisvas“, trumpi aprašymai ir
+              vizualūs akcentai – viskas aiškiai ir paprastai.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="listings" class="listings">
+        <div class="listings-header">
+          <h2>Mūsų nekilnojamo turto pasiūlymai</h2>
+          <p>
+            Pasirink objektą, o mūsų avataras tau trumpai jį pristatys. Pasiūlymai
+            nuolat atnaujinami – suspėk prieš kitus!
+          </p>
+          <div class="filters">
+            <button class="filter-btn active" data-filter="all">Visi</button>
+            <button class="filter-btn" data-filter="available">Laisvi</button>
+            <button class="filter-btn" data-filter="sold">Parduoti</button>
+          </div>
+        </div>
+
+        <div class="listings-layout">
+          <div class="cards-grid">
+            <article
+              class="property-card"
+              data-status="available"
+              data-title="Šviesus butas miesto centre"
+              data-price="179 000 €"
+              data-description="2 kambariai, 52 m², balkonas į saulėtą kiemą. Puikus variantas jaunai porai!"
+            >
+              <div class="property-image img-1"></div>
+              <div class="property-content">
+                <div class="property-header">
+                  <h3>Šviesus butas miesto centre</h3>
+                  <span class="property-price">179 000 €</span>
+                </div>
+                <p class="property-meta">2 kambariai · 52 m² · 3 aukštas</p>
+                <p class="property-desc">
+                  Jaukus, šviesus ir kompaktiškas. Rytais čia kvepia kava ir
+                  naujomis galimybėmis.
+                </p>
+                <span class="property-status property-status--available">
+                  Laisvas
+                </span>
+              </div>
+            </article>
+
+            <article
+              class="property-card"
+              data-status="sold"
+              data-title="Modernus namas priemiestyje"
+              data-price="329 000 €"
+              data-description="4 kambariai, terasa ir žalias kiemas – svajonė šeimai, kuri mėgsta erdvę."
+            >
+              <div class="property-badge property-badge--sold">Parduota</div>
+              <div class="property-image img-2"></div>
+              <div class="property-content">
+                <div class="property-header">
+                  <h3>Modernus namas priemiestyje</h3>
+                  <span class="property-price">329 000 €</span>
+                </div>
+                <p class="property-meta">4 kambariai · 120 m² · terasa</p>
+                <p class="property-desc">
+                  Minimalistinis dizainas, daug šviesos ir jaukus kiemas BBQ
+                  vakarėliams.
+                </p>
+                <span class="property-status property-status--sold">
+                  Parduota
+                </span>
+              </div>
+            </article>
+
+            <article
+              class="property-card"
+              data-status="available"
+              data-title="Spalvingas studijos tipo butas"
+              data-price="139 000 €"
+              data-description="Atvira erdvė kūrybingiems žmonėms. Puikiai tinka pirmajam būstui."
+            >
+              <div class="property-image img-3"></div>
+              <div class="property-content">
+                <div class="property-header">
+                  <h3>Spalvingas studijos tipo butas</h3>
+                  <span class="property-price">139 000 €</span>
+                </div>
+                <p class="property-meta">1 kambarys · 35 m² · miesto panorama</p>
+                <p class="property-desc">
+                  Studija, kurioje telpa viskas: darbas, poilsis ir net šokių
+                  repeticijos.
+                </p>
+                <span class="property-status property-status--available">
+                  Laisvas
+                </span>
+              </div>
+            </article>
+
+            <article
+              class="property-card"
+              data-status="sold"
+              data-title="Kotedžas prie ežero"
+              data-price="259 000 €"
+              data-description="Vakarinės saulės spinduliai, ežeras už kelių žingsnių ir tyla – savaitgaliams ar gyvenimui."
+            >
+              <div class="property-badge property-badge--sold">Parduota</div>
+              <div class="property-image img-4"></div>
+              <div class="property-content">
+                <div class="property-header">
+                  <h3>Kotedžas prie ežero</h3>
+                  <span class="property-price">259 000 €</span>
+                </div>
+                <p class="property-meta">3 kambariai · 88 m² · ežero pakrantė</p>
+                <p class="property-desc">
+                  Ideali vieta meditatyvems rytams ir triukšmingiems vasaros
+                  vakarėliams.
+                </p>
+                <span class="property-status property-status--sold">
+                  Parduota
+                </span>
+              </div>
+            </article>
+          </div>
+
+          <aside id="avatar" class="avatar-panel">
+            <div class="avatar-character">
+              <video width="100%" height="auto" autoplay loop playsinline controls style="border-radius: 15px; border: 3px solid #f97316; display: block;">
+                    <source src="benas.mp4" type="video/mp4">
+                    Jūsų naršyklė nepalaiko vaizdo įrašų.
+                </video>
+            </div>
+            <div class="avatar-speech">
+                <h3>NT brokeris Benas</h3>
+                <p id="avatarText">
+                    Sveiki! Aš esu Benas. Paspauskite ant bet kurios NT kortelės ir aš padėsiu jums rasti svajonių namus!
+                </p>
+            </div>
+        </aside>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="cta-content">
+          <h2>Pasiruošęs žengti žingsnį link savo naujų namų?</h2>
+          <p>
+            Palik savo kontaktus (šiame demo variante – tiesiog įsivaizduok 😊) ir
+            mes susisieksime su pasiūlymais, kurie atitinka tavo nuotaiką ir
+            lūkesčius.
+          </p>
+          <form class="cta-form" onsubmit="return false;">
+            <input type="text" placeholder="Vardas" required />
+            <input type="email" placeholder="El. paštas" required />
+            <button class="btn btn-primary">Noriu pasiūlymų</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Linksmieji Namai – demonstracinė NT svetainė.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
